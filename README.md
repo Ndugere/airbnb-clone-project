@@ -9,11 +9,26 @@ This project is a simplified clone of the AirBnB web application. It is part of 
 - Apply version control using Git and GitHub.
 - Improve debugging and testing skills.
 
-## Tech Stack
-- **Languages:** Python, JavaScript, HTML, CSS
-- **Frameworks:** Flask (for backend), Bootstrap (for frontend)
-- **Database:** MySQL or SQLite
-- **Tools:** Git, GitHub, Postman, VS Code
+## Technology Stack
+
+This project uses a selection of powerful backend and data-related technologies to ensure a secure, scalable, and efficient application. Below are the key technologies used and their roles:
+
+### Django
+A high-level Python web framework used for building the core of the application, including business logic, user authentication, URL routing, and RESTful API development.
+
+### PostgreSQL
+A robust, open-source relational database system used to store and manage structured data such as user accounts, listings, bookings, and reviews.
+
+### GraphQL
+An API query language that enables clients to request only the data they need, improving performance and reducing payload sizes compared to REST.
+
+### Git & GitHub
+Version control and source code hosting tools used to track changes, manage collaboration, and maintain a centralized repository for the project.
+
+---
+
+This backend-focused technology stack provides a strong foundation for building a reliable and extensible AirBnB clone application.
+
 
 ## How to Run the Project
 1. Clone the repository:
