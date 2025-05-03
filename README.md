@@ -30,6 +30,68 @@ Version control and source code hosting tools used to track changes, manage coll
 This backend-focused technology stack provides a strong foundation for building a reliable and extensible AirBnB clone application.
 
 
+## Database Design
+
+This section outlines the structure of the database by identifying key entities and their relationships. The goal is to model the core functionalities of the AirBnB platform such as user management, property listings, bookings, reviews, and payments.
+
+### Entities and Key Fields
+
+#### 1. Users
+Represents the individuals who can use the platform either as guests or hosts.
+- `id` (Primary Key)
+- `username`
+- `email`
+- `password_hash`
+- `is_host` (Boolean to distinguish between hosts and guests)
+
+#### 2. Properties
+Represents the accommodations listed by hosts.
+- `id` (Primary Key)
+- `user_id` (Foreign Key referencing Users)
+- `title`
+- `description`
+- `location`
+- `price_per_night`
+
+#### 3. Bookings
+Represents a reservation made by a user for a specific property.
+- `id` (Primary Key)
+- `user_id` (Foreign Key referencing Users)
+- `property_id` (Foreign Key referencing Properties)
+- `check_in_date`
+- `check_out_date`
+- `total_price`
+
+#### 4. Reviews
+Represents feedback submitted by users after a stay.
+- `id` (Primary Key)
+- `user_id` (Foreign Key referencing Users)
+- `property_id` (Foreign Key referencing Properties)
+- `rating` (e.g., 1 to 5 stars)
+- `comment`
+
+#### 5. Payments
+Represents payment transactions for bookings.
+- `id` (Primary Key)
+- `booking_id` (Foreign Key referencing Bookings)
+- `amount`
+- `payment_date`
+- `payment_status` (e.g., completed, pending, failed)
+
+### Entity Relationships
+- A **User** can list multiple **Properties** (One-to-Many).
+- A **User** can make multiple **Bookings** (One-to-Many).
+- A **Property** can have multiple **Bookings** (One-to-Many).
+- A **Booking** is linked to one **User** and one **Property** (Many-to-One).
+- A **Property** can have multiple **Reviews** (One-to-Many).
+- A **User** can write multiple **Reviews** (One-to-Many).
+- A **Booking** has one **Payment** (One-to-One).
+
+---
+
+This relational database model ensures data integrity, scalability, and supports all core operations needed for the platform.
+
+
 ## How to Run the Project
 1. Clone the repository:
 
