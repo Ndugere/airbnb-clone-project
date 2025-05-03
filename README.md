@@ -137,6 +137,26 @@ Payment processing endpoints will be secured with SSL encryption and will only b
 
 Implementing these security measures is vital to prevent unauthorized access, protect personal and financial data, and uphold the credibility and safety of the platform.
 
+
+## CI/CD Pipeline
+
+CI/CD (Continuous Integration and Continuous Deployment) pipelines are automated workflows that help streamline the development process. They ensure that code changes are automatically tested, integrated, and deployed, reducing the chances of bugs reaching production and increasing the overall efficiency of the team.
+
+For this project, a CI/CD pipeline will help by:
+- Running automated tests on each commit to maintain code quality.
+- Building and deploying the application consistently across environments.
+- Notifying the team of build failures or deployment issues immediately.
+
+### Tools
+- **GitHub Actions**: Used to automate testing, building, and deployment workflows directly from the GitHub repository.
+- **Docker**: Provides consistent environments across development, testing, and production, simplifying the deployment process.
+- **Heroku or AWS (optional)**: Can be used for deploying the application with minimal setup.
+
+---
+
+Implementing a CI/CD pipeline ensures rapid delivery, reliable deployments, and consistent software quality throughout the lifecycle of the Airbnb Clone project.
+
+
 ## How to Run the Project
 1. Clone the repository:
 
