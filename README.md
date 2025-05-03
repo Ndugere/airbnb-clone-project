@@ -90,6 +90,29 @@ Represents payment transactions for bookings.
 ---
 
 This relational database model ensures data integrity, scalability, and supports all core operations needed for the platform.
+## Feature Breakdown
+
+This section highlights the core features of the Airbnb Clone project. Each feature is designed to replicate the functionality of the original platform while maintaining clarity and simplicity in design.
+
+### User Management
+Allows users to register, log in, and manage their profiles. The system supports both guest and host roles, with secure authentication and authorization mechanisms.
+
+### Property Management
+Hosts can list new properties with details such as title, description, price, and location. They can also update or delete their listings and manage availability for bookings.
+
+### Booking System
+Users can search for properties and make bookings based on availability. The system handles check-in and check-out dates, calculates total prices, and prevents overlapping bookings.
+
+### Review System
+Users can leave reviews for properties they have stayed at. This helps maintain transparency and trust within the platform, allowing future users to make informed decisions.
+
+### Payment Processing
+Handles secure transactions for property bookings. Each payment is linked to a booking and includes details like amount, status, and date of transaction.
+
+---
+
+These features work together to deliver a functional and user-centered experience that mirrors key aspects of the Airbnb platform.
+
 
 
 ## How to Run the Project
